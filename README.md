@@ -1,7 +1,7 @@
 # Factorial Calculator
 Calculates factorial of a provided number.
 
-##Assignment
+## Assignment
 * Languages: JavaScript
 * Create a factorial calculator that takes a number from the user and calculates the factorial of that number.
 ###User Stories
@@ -12,13 +12,13 @@ Calculates factorial of a provided number.
 5. You should store the final output in the format Factorial of [num] is [factorial] and assign it to the variable resultMsg.
 6. You should output the value of resultMsg to the console.
 
-##Features
+## Features
 *User can input a number and the console should log the factorial of that number.
 
-##Concepts Learned
+## Concepts Learned
 *Reviewed how to use a for loop and iterating numbers.
 
-##Examples
+## Examples
 ```
 JavaScript
 
