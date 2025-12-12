@@ -1,43 +1,42 @@
-# longest-word-finder
-This function will find the longest word in a sentence and output that word's length
+# Factorial Calculator
+Calculates factorial of a provided number.
 
-## Features
-* Splits a sentence into individual words
-* Iterates through each word to compare lengths
-* Tracks and returns the longest word length
-* Handles sentences of any size
-* Loops and conditionals
+##Assignment
+* Languages: JavaScript
+* Create a factorial calculator that takes a number from the user and calculates the factorial of that number.
+###User Stories
+1. You should declare a variable num and assign it a number of your choice. The assigned number should be between 1 and 20 inclusive.
+2. Create a function named factorialCalculator that takes a number as an argument and returns the factorial of that number.
+3. Inside the function, declare a result variable and assign it the value of 1. Using a loop, loop through all numbers from 1 to the input number(inclusive) and for each number, multiply the result variable by the current number and assign the result to the result variable. You can choose to use either a for loop, while loop or do...while loop here.
+4. You should call the factorialCalculator function with num as the argument and assign the result to the variable factorial.
+5. You should store the final output in the format Factorial of [num] is [factorial] and assign it to the variable resultMsg.
+6. You should output the value of resultMsg to the console.
 
-## Concepts Utilized
-* Creating a function
-* Split() method
-* Iteration
-* If statements
-* Loops
+##Features
+*User can input a number and the console should log the factorial of that number.
 
+##Concepts Learned
+*Reviewed how to use a for loop and iterating numbers.
+
+##Examples
 ```
 JavaScript
 
-function findLongestWordLength(sentence) {
-  let longestWord = "";
-  let wordsArray = sentence.split(" ");
+const num = 5;
 
-  for (let i = 0; i < wordsArray.length; i++) {
-    if (wordsArray[i].length > longestWord.length) {
-      longestWord = wordsArray[i];
-    }
+function factorialCalculator(num) {
+  let result = 1;
+  for (let i = 1; i <= num; i++) {
+    result = result * i;
   }
 
-  return longestWord.length;
+  return result
 }
 
-```
+const factorial = factorialCalculator(num);
+let resultMsg = `Factorial of ${num} is ${factorial}`;
 
-## Example Usage
-```
-
-findLongestWordLength("The quick brown fox");
-→ 5   // ("quick")
+console.log(resultMsg); // This will return "Factorial of 5 is 120"
 
 ```
 
